@@ -80,6 +80,7 @@ function katilimSaati(dersSayisi, dersSuresi){
   
     if(nonValidEntries.some(checkExists) || isNaN(dersSayisi) || isNaN(dersSuresi)) {
         console.log("Your entries are not a number.");
+        return false;
     } else {
         return dersSayisi * dersSuresi;
     }
